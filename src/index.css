@@ -1,0 +1,155 @@
+#root {
+  background-color: blueviolet;
+}
+
+html {
+  background-color: blueviolet;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.greyBackground {
+  background-color: #ec8080;
+}
+
+label {
+  font-size: 20px;
+  color: blue;
+}
+
+span {
+  font-size: 15px;
+}
+
+.active_class {
+  background-color: #efefef;
+  border-bottom: 1px solid red;
+}
+
+ul {
+  background-color: #00c0d0;
+}
+
+li {
+  color: #fff;
+}
+
+hr {
+  border: solid 3px #000;
+}
+
+.cardStyle {
+  /* border-radius: 20%; */
+  width: 30%;
+  height: 40px;
+  background-color: #fff;
+  display: grid;
+}
+
+.elementSize {
+  width: 100%;
+  height: 7vh;
+}
+
+/* The navigation bar */
+.navBar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 500;
+}
+
+/* Links inside the navbar */
+.navBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navBar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 40px; /* Add a top margin to avoid content overlay */
+}
+
+/* for person divs */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.flex-child {
+  flex: 1;
+  border: 1px solid #000;
+  margin-left: 2px;
+}
+
+/* Float four columns side by side */
+.columnPerson {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.rowPerson {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.rowPerson:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.cardPerson {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.cardPerson:hover {
+  background-color: #ec8080;
+  color: #fff;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .columnPerson {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
